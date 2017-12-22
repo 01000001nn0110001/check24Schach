@@ -1,0 +1,49 @@
+Hier will ich einfach meinen Gedankengänge und Probleme festhalten.
+ 
+Wie soll ich die berechtigten Züge angeben?
+
+Möglichkeit die Felder nicht a1 usw zunennen sondern durchzzunummerieren, damit man dann die Züge sub-/addieren kann.
+z.B. Pferd {-17, -15, -10, -6, 6, 10, 15, 17}(siehe unten)
+Um es dann am Ende richtig ausgeben zu können müsste man den Nummern der einzelnen Felder die richtigen Bezeichnungen zuordnen ... > hierbei aber nicht so wichtig
+
+
+Ich hatte leider Probleme mit mircosoft azure und deren SQL in APP.
+Hab mich dann dazu enschieden hier 2 Dateien zusetzen eine die die anderen Dateien befüttert mir den SQL daten, damit wenn es funktioniert es nicht notwendig ist jede einzelne Datei zuüberprüfen.(einbindenSQL.php)
+Desweiteren eine PHP Datei die die Tabellen erstellen sollte (DATA.php)
+
+Wie kann ich die Sicht ändern?
+Ist das nur Frontend? Nein aber größten Teils. -> zum Schluss bedenken wenn noch möglich
+>durch die einstellung w oder s in der Datenbank? und dann durch einen Buttom
+
+
+
+Zugmuster der einzelnen Figuren:
+
+Bauer:{-8}//mit vielen Bedinungen wenn ende dann andere Figure & kann schräg schlagen
+Turm:{-8,-1,1,8}//vektor mäßig >loop bis ein besetzes feld kommt
+Pferd: {-17,-15,-10,-6,6,10,15,17}
+Läufer:{-9,-7,7,9}//vektor mäßig >loop bis ein besetzes feld kommt
+Dame:{-9,,8,-7,-1,1,7,8,9}//vektor mäßig >loop bis ein besetzes feld kommt
+König:{-9,-8,,-7,-1,1,7,8,9}
+
+Diese dann als figureclassen java? Und dann den jeweiligen Figuren zuordnen.
+
+
+Leider hab ich das nicht mehr geschafft. Für jeden eine private BERCHTIGTER_ZUG mit den nummen die nur diese ausgibt und prüft ob das zielfeld besetzt ist und zwar mit einer eigener Spielfigure.
+Wenn nicht dann gehts wenn besetzt durch was eigenes dann nicht.
+Desweiteren muss beim König ergenzt werden das wenn dieser fehlt das spiel vorbei ist.
+
+Die Component sind fertig hierbei würde ich jetzt weiter mit dem Html & Css machen, jedoch gehört dieses ja jetzt nicht dazu.
+Desweitern fehlt noch die visuelle Darstellung von dem Brett und das einfügen der Figurenbilder.
+
+Der Ordner node_modules ist wahrscheinlich viel zugröß jedoch hatte ich diese zusammenstellung schon.
+Bei einem richtigen Projekt müsste man dann gucken was man wirklich braucht.
+
+Noch nicht / Nicht mehr geschafft:
+Dateien die noch nicht fertig sind:
+- findUser fehlt    
+
+-weiß beginnt? -> notwendig? wüsste jetzt nicht wie -> zu komplex?
+
+-classes neu und dann gleich binden an die Figuren
+        > Java classen erstellen..
